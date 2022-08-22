@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/google-maps-travel/static/js/main.8d9b3c2c.js",
+    "index.html": "/google-maps-travel/index.html",
+    "main.8d9b3c2c.js.map": "/google-maps-travel/static/js/main.8d9b3c2c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8d9b3c2c.js"
+  ]
+}
