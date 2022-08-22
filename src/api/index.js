@@ -20,19 +20,3 @@ export const getPlacesData = async (type, sw, ne) => {
         console.log(error)
     }
 }
-
-export const getWeatherData = async (lat, lng) => {
-    try {
-        const { data } = await axios.get('https://wft-geo-db.p.rapidapi.com/v1/geo"', {
-            headers: {
-                params: {lon: lng, lat: lat,},
-                'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_WEATHER_API_KEY,
-                'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
-              }
-        });
-
-        return data;
-    } catch (error) {
-        console.log(error)
-    }
-}
