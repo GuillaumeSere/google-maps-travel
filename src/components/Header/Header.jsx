@@ -2,6 +2,7 @@ import React,  {useState } from 'react';
 import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, Typography, InputBase, Box } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
+import Button from '@mui/material/Button';
 
 import useStyles from './style.js';
 
@@ -24,6 +25,10 @@ const Header = ({ setCoordinates }) => {
                 <Typography variant="h2" className={classes.title}>
                    GSL
                 </Typography>
+                <Box sx={{flexDirection: "row", padding: "10px",display: "flex-wrap", marginRight:"500px"}}>
+                <Button variant="contained" style={{background: "green", marginRight: "10px"}}>S'inscrire</Button>
+                <Button variant="contained" >Se connecter</Button>
+                </Box>
                 <Box display="inline-flex">
                 <Typography variant="h6" className={classes.title}>
                     Recherche Villes
